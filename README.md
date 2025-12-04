@@ -9,8 +9,9 @@ This repository contains the implementation of **VILSOW** and a demo using the `
 ## Quick Start
 1. Clone the repository.
 2. Open MATLAB and navigate to the folder.
-3. Run `demo_emotions.m`.
+3. Run `demo.m`.
 
 ## Results
 The script will output the evaluation metrics (Average Precision, Hamming Loss, etc.) in the command window and save the convergence plot to `./results`.
+
 
