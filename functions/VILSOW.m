@@ -201,13 +201,10 @@ function val = calculate_L21(X)
 end
 
 function val = calculate_HSIC(Q1, Q2, H)
-    % Hilbert-Schmidt Independence Criterion using pre-computed H
-    % Standard HSIC(A,B) = trace(A*H*B*H) / (n-1)^2 usually, 
-    % but here implementation depends on the paper's definition.
-    % Assuming Kernel is linear: K1 = Q1'*Q1
     K1 = Q1' * Q1;
     K2 = Q2' * Q2;
-    val = trace(K1 * H * K2 * H);
+    l = size(H, 1);
+    val = trace(K1 * H * K2 * H) / (l - 1)^2;
 end
 
 function plot_convergence(obj, datasetName, saveDir)
