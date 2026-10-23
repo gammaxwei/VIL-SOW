@@ -38,9 +38,9 @@ The following numerical entries have been corrected for the **scene** dataset:
 |---|---|---|---|
 | AP (%) | GRRO | 85.61 ± 0.61 | 85.61 ± 0.24 |
 | OE (%) | GRRO | 3.41 ± 3.41 | 3.41 ± 0.82 |
-| RL (%) | GRRO | 6.10 ± 0.60 | 6.12 ± 0.45 |
+| RL (%) | GRRO | 6.10 ± 6。10 | 6.12 ± 0.45 |
 | HL (%) | GRRO | 8.80 ± 0.85 | 8.85 ± 0.15 |
-| CV | GRRO | 11.24 ± 0.34 | 11.24 ± 0.18 |
+| CV | GRRO | 11.24 ± 11.24 | 11.24 ± 0.18 |
 | OE (%) | SSFS | 1.37 ± 3.61 | 1.37 ± 0.92 |
 
 The remaining adjustments to the RL and HL values reflect the use of consistent numerical precision based on the original experimental results.
@@ -50,3 +50,5 @@ The remaining adjustments to the RL and HL values reflect the use of consistent 
 The metric labels **OE** and **CV** were inadvertently interchanged in Figs. 6 and 7. The corresponding labels have been corrected.
 
 These corrections do not affect the proposed method, the experimental setup, or the overall conclusions of the paper.
+
+A link to the official correction notice will be added here once it is published in IEEE Xplore.
