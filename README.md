@@ -1,5 +1,5 @@
 
-# VILSOW: Code for Multi-view Multi-label Feature Selection By View-specific Implicit Label Information and Second-order Weight Matrix
+# Code for Multi-view Multi-label Feature Selection By View-specific Implicit Label Information and Second-order Weight Matrix
 
 This repository contains the implementation of **VILSOW** and a demo using the `emotions` dataset.
 
