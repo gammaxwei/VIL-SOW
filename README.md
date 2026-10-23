@@ -29,8 +29,8 @@ This section provides corrections and clarifications to the experimental results
 Several numerical entries in Table III have been corrected. In addition, the reporting precision of the Ranking Loss (RL) and Hamming Loss (HL) results has been standardized to two decimal places.
 
 The corrected Table III is presented below.
+<img width="3182" height="2089" alt="table_iii_corrected" src="https://github.com/user-attachments/assets/b0a446c6-ee31-45c1-9c98-d63dc6673d4a" />
 
-![Corrected Table III](images/table_iii_corrected.png)
 
 The following numerical entries have been corrected for the **scene** dataset:
 
