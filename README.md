@@ -38,7 +38,7 @@ The following numerical entries have been corrected for the **scene** dataset:
 |---|---|---|---|
 | AP (%) | GRRO | 85.61 ± 0.61 | 85.61 ± 0.24 |
 | OE (%) | GRRO | 3.41 ± 3.41 | 3.41 ± 0.82 |
-| RL (%) | GRRO | 6.10 ± 6。10 | 6.12 ± 0.45 |
+| RL (%) | GRRO | 6.10 ± 6.10 | 6.12 ± 0.45 |
 | HL (%) | GRRO | 8.80 ± 0.85 | 8.85 ± 0.15 |
 | CV | GRRO | 11.24 ± 11.24 | 11.24 ± 0.18 |
 | OE (%) | SSFS | 1.37 ± 3.61 | 1.37 ± 0.92 |
