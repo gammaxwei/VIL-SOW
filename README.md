@@ -16,8 +16,6 @@ Multi-view Multi-label Feature Selection By View-specific Implicit Label Informa
 
 > Official MATLAB implementation of **"Multi-view Multi-label Feature Selection By View-specific Implicit Label Information and Second-order Weight Matrix"**, published in *IEEE Transactions on Multimedia (TMM), 2026*.
 
-**Paper:** [IEEE Transactions on Multimedia](https://doi.org/10.1109/TMM.2026.3701532)
-
 ---
 
 ## 🌟 Overview
@@ -28,7 +26,7 @@ This repository provides the MATLAB implementation of **VIL-SOW**, a multi-view 
 
 - **View-specific Implicit Label Information:** Explores implicit label information within individual views to facilitate feature selection.
 - **Second-order Weight Matrix:** Incorporates second-order weight information into the feature selection framework.
-- **MATLAB Implementation:** Provides source code and an executable demonstration using the `emotions` dataset.
+- **MATLAB Implementation:** Provides code and an executable demonstration using the `emotions` dataset.
 
 ---
 
