@@ -26,7 +26,7 @@ This section provides corrections and clarifications to the experimental results
 
 ### Table III: Performance Comparison
 
-Several numerical entries in Table III have been corrected. In addition, the reporting precision of the Ranking Loss (RL) and Hamming Loss (HL) results has been standardized to two decimal places.
+Several numerical entries in Table III have been corrected. In addition, the reporting precision of the Ranking Loss (RL) and Hamming Loss (HL) results has been standardized to two decimal places. The adjustments to the RL and HL values reflect consistent reporting precision based on the original experimental results. Some values were previously rounded to one decimal place and subsequently displayed with a trailing zero (e.g., 6.1 as 6.10). The corrected values (e.g., 6.12) retain two decimal places from the original experimental results.
 
 The corrected Table III is presented below.
 <img width="3182" height="2089" alt="table_iii_corrected" src="https://github.com/user-attachments/assets/b0a446c6-ee31-45c1-9c98-d63dc6673d4a" />
