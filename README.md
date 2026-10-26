@@ -1,4 +1,4 @@
-<h1 align="center">VIL-SOW</h1>
+<h1 align="center">Code for VIL-SOW</h1>
 
 <h3 align="center">
 Multi-view Multi-label Feature Selection By View-specific Implicit Label Information and Second-order Weight Matrix
