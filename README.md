@@ -1,54 +1,163 @@
+<h1 align="center">VIL-SOW</h1>
 
-# Code for Multi-view Multi-label Feature Selection By View-specific Implicit Label Information and Second-order Weight Matrix
+<h3 align="center">
+Multi-view Multi-label Feature Selection By View-specific Implicit Label Information and Second-order Weight Matrix
+</h3>
 
-This repository contains the implementation of **VILSOW** and a demo using the `emotions` dataset.
+<p align="center">
+  <a href="https://doi.org/10.1109/TMM.2026.3701532">
+    <img src="https://img.shields.io/badge/IEEE-TMM%202026-blue">
+  </a>
+  <img src="https://img.shields.io/badge/Language-MATLAB-orange">
+  <a href="https://doi.org/10.1109/TMM.2026.3701532">
+    <img src="https://img.shields.io/badge/DOI-10.1109%2FTMM.2026.3701532-green">
+  </a>
+</p>
 
-**Paper:** Multi-view Multi-label Feature Selection By View-specific Implicit Label Information and Second-order Weight Matrix
+> Official MATLAB implementation of **"Multi-view Multi-label Feature Selection By View-specific Implicit Label Information and Second-order Weight Matrix"**, published in *IEEE Transactions on Multimedia (TMM), 2026*.
 
-**DOI:** https://doi.org/10.1109/TMM.2026.3701532
+**Paper:** [IEEE Transactions on Multimedia](https://doi.org/10.1109/TMM.2026.3701532)
 
-## Requirements
-- MATLAB (R2018a or later recommended)
-- Dataset: `emotions.mat` (included in `./datasets`)
+---
 
-## Quick Start
-1. Clone the repository.
-2. Open MATLAB and navigate to the folder.
-3. Run `demo.m`.
+## 🌟 Overview
 
-## Results
+This repository provides the MATLAB implementation of **VIL-SOW**, a multi-view multi-label feature selection method based on view-specific implicit label information and a second-order weight matrix.
 
-The script will output the evaluation metrics (Average Precision, Hamming Loss, etc.) in the command window and save the convergence plot to `./results`.
+### 🔑 Key Highlights
 
-## Corrections
+- **View-specific Implicit Label Information:** Explores implicit label information within individual views to facilitate feature selection.
+- **Second-order Weight Matrix:** Incorporates second-order weight information into the feature selection framework.
+- **MATLAB Implementation:** Provides source code and an executable demonstration using the `emotions` dataset.
 
-This section provides corrections and clarifications to the experimental results reported in Table III and the metric labels in Figs. 6 and 7 of the published paper.
+---
 
-### Table III: Performance Comparison
+## 🗂️ Datasets
 
-Several numerical entries in Table III have been corrected. In addition, the reporting precision of the Ranking Loss (RL) and Hamming Loss (HL) results has been standardized to two decimal places. The adjustments to the RL and HL values reflect consistent reporting precision based on the original experimental results. Some values were previously rounded to one decimal place and subsequently displayed with a trailing zero (e.g., 6.1 as 6.10). The corrected values (e.g., 6.12) retain two decimal places from the original experimental results.
+The `emotions` dataset is included in the `datasets` directory for demonstration purposes.
 
-The corrected Table III is presented below.
-<img width="3182" height="2089" alt="table_iii_corrected" src="https://github.com/user-attachments/assets/b0a446c6-ee31-45c1-9c98-d63dc6673d4a" />
+---
 
+## ⚙️ Requirements
 
-The following numerical entries have been corrected for the **scene** dataset:
+- MATLAB R2018a or later (recommended).
+- Dataset: `emotions.mat` (included in `./datasets`).
+- ML-KNN functions for classification-based evaluation.
+
+---
+
+## 🚀 Quick Start
+
+**Step 1.** Clone the repository:
+
+```bash
+git clone https://github.com/gammaxwei/VIL-SOW.git
+cd VIL-SOW
+```
+
+**Step 2.** Open MATLAB and navigate to the repository directory.
+
+**Step 3.** Run the demonstration:
+
+```matlab
+demo
+```
+
+The demonstration performs feature selection on the `emotions` dataset with an 80%/20% train-test split.
+
+The script can report the following metrics when the ML-KNN functions are available:
+
+- Average Precision (AP)
+- One Error (OE)
+- Ranking Loss (RL)
+- Hamming Loss (HL)
+- Coverage (CV)
+
+The convergence plot is saved to the `results` directory when generated.
+
+> **Note:** The provided demo illustrates the implementation and is not intended to reproduce the complete cross-validation results reported in Table III.
+
+---
+
+## 📝 Corrections
+
+This section documents corrections and clarifications to **Table III** and **Figs. 6 and 7** of the published paper.
+
+### 📊 Table III: Numerical Corrections
+
+Several numerical entries in Table III have been corrected. The reporting precision of the Ranking Loss (RL) and Hamming Loss (HL) results has also been standardized to two decimal places.
+
+The following corrections apply to the **scene** dataset.
 
 | Metric | Method | Original | Corrected |
-|---|---|---|---|
-| AP (%) | GRRO | 85.61 ± 0.61 | 85.61 ± 0.24 |
-| OE (%) | GRRO | 3.41 ± 3.41 | 3.41 ± 0.82 |
-| RL (%) | GRRO | 6.10 ± 6.10 | 6.12 ± 0.45 |
-| HL (%) | GRRO | 8.80 ± 8.85 | 8.85 ± 0.15 |
-| CV | GRRO | 11.24 ± 11.24 | 11.24 ± 0.18 |
-| OE (%) | SSFS | 1.37 ± 3.61 | 1.37 ± 0.92 |
+|:---:|:---:|---:|---:|
+| AP (%) ↑ | GRRO | 85.61 ± 0.61 | **85.61 ± 0.24** |
+| OE (%) ↓ | GRRO | 3.41 ± 3.41 | **3.41 ± 0.82** |
+| RL (%) ↓ | GRRO | 6.10 ± 6.10 | **6.12 ± 0.45** |
+| HL (%) ↓ | GRRO | 8.80 ± 8.85 | **8.85 ± 0.15** |
+| CV ↓ | GRRO | 11.24 ± 11.24 | **11.24 ± 0.18** |
+| OE (%) ↓ | SSFS | 1.37 ± 3.61 | **1.37 ± 0.92** |
 
-The remaining adjustments to the RL and HL values reflect the use of consistent numerical precision based on the original experimental results.
+*↑ Higher is better; ↓ Lower is better. Corrected values are highlighted in bold.*
 
-### Figures 6 and 7: Metric Labels
+### 🔍 Corrected Table III: Full Results
 
-The metric labels **OE** and **CV** were inadvertently interchanged in Figs. 6 and 7. The corresponding labels have been corrected.
+The complete corrected performance comparison is provided below.
+
+<details>
+<summary><b>📄 Click to view the corrected Table III</b></summary>
+
+<br>
+
+<p align="center">
+  <a href="https://github.com/user-attachments/assets/b0a446c6-ee31-45c1-9c98-d63dc6673d4a">
+    <img src="https://github.com/user-attachments/assets/b0a446c6-ee31-45c1-9c98-d63dc6673d4a" alt="Corrected Table III" width="100%">
+  </a>
+</p>
+
+<p align="center">
+  <em>Table III. Performance comparison of different methods on different metrics.</em>
+</p>
+
+</details>
+
+### 🔢 Numerical Precision
+
+Some RL and HL values were previously rounded to one decimal place and subsequently displayed with a trailing zero (e.g., 6.1 as 6.10).
+
+The corrected values (e.g., 6.12) retain two decimal places from the original experimental results. These adjustments reflect consistent reporting precision rather than changes to the underlying experiments.
+
+The corrections to erroneously reported standard deviations are documented separately in the numerical correction table above.
+
+### 📈 Figures 6 and 7: Metric Labels
+
+The metric labels **OE** and **CV** were inadvertently interchanged in Figs. 6 and 7.
+
+The corresponding labels have been corrected.
 
 These corrections do not affect the proposed method, the experimental setup, or the overall conclusions of the paper.
 
-A link to the official correction notice will be added here once it is published in IEEE Xplore.
+> **Official Correction Notice:** A link to the correction notice will be added once it becomes available on IEEE Xplore.
+
+---
+
+## 📖 Citation
+
+If you find our work or code helpful for your research, please consider citing our paper:
+
+```bibtex
+@article{dai2026multiview,
+  title={Multi-view Multi-label Feature Selection By View-specific Implicit Label Information and Second-order Weight Matrix},
+  author={Dai, Jianhua and Wei, Shiyu and Pedrycz, Witold},
+  journal={IEEE Transactions on Multimedia},
+  year={2026},
+  doi={10.1109/TMM.2026.3701532}
+}
+```
+
+---
+
+## 🔗 Links
+
+- **Paper:** https://doi.org/10.1109/TMM.2026.3701532
+- **Code:** https://github.com/gammaxwei/VIL-SOW
