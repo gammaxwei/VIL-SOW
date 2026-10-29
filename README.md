@@ -117,11 +117,11 @@ The complete corrected performance comparison is provided below.
 
 ### 🔢 Numerical Precision
 
-Some RL and HL values were previously rounded to one decimal place and subsequently displayed with a trailing zero (e.g., 6.1 as 6.10).
+Some RL and HL values were previously rounded to one decimal place, with a trailing zero added as a placeholder for consistent formatting. For example, the original values 0.06123 and 0.08847 were displayed as 6.10 and 8.80, respectively, rather than 6.12 and 8.85.
 
-The corrected values (e.g., 6.12) retain two decimal places from the original experimental results. These adjustments reflect consistent reporting precision rather than changes to the underlying experiments.
+The corrected values are rounded directly to two decimal places from the original experimental results. These adjustments only standardize numerical precision without changing the underlying experiments.
 
-The corrections to erroneously reported standard deviations are documented separately in the numerical correction table above.
+Corrections to incorrectly reported standard deviations are documented separately in the numerical correction table above.
 
 ### 📈 Figures 6 and 7: Metric Labels
 
